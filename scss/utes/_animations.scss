@@ -1,0 +1,173 @@
+
+
+.skill-div ul li:nth-of-type(1){order: 1;}
+.skill-div ul li:nth-of-type(2){order: 2;}
+.skill-div ul li:nth-of-type(3){order: 3;}
+.skill-div ul li:nth-of-type(4){order: 4;}
+.skill-div ul li:nth-of-type(5){order: 5;}
+.skill-div ul li:nth-of-type(6){order: 6;}
+.skill-div ul li:nth-of-type(7){order: 7;}
+.skill-div ul li:nth-of-type(8){order: 8;}
+
+.skill-div ul li:nth-of-type(1){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord4 1s linear 5.5s 1 forwards,
+			   ord7 1s linear 11.5s 1 forwards,
+			   ord3 1s linear 17.5s 1 forwards,
+			   ord8 1s linear 23.5s 1 forwards,
+			   ord6 1s linear 29.5s 1 forwards,
+			   ord5 1s linear 35.5s 1 forwards,
+			   ord2 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(2){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord1 1s linear 5.5s 1 forwards,
+			   ord4 1s linear 11.5s 1 forwards,
+			   ord7 1s linear 17.5s 1 forwards,
+			   ord3 1s linear 23.5s 1 forwards,
+			   ord8 1s linear 29.5s 1 forwards,
+			   ord6 1s linear 35.5s 1 forwards,
+			   ord5 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(3){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord8 1s linear 5.5s 1 forwards,
+			   ord6 1s linear 11.5s 1 forwards,
+			   ord5 1s linear 17.5s 1 forwards,
+			   ord2 1s linear 23.5s 1 forwards,
+			   ord1 1s linear 29.5s 1 forwards,
+			   ord4 1s linear 35.5s 1 forwards,
+			   ord7 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(4){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord7 1s linear 5.5s 1 forwards,
+			   ord3 1s linear 11.5s 1 forwards,
+			   ord8 1s linear 17.5s 1 forwards,
+			   ord6 1s linear 23.5s 1 forwards,
+			   ord5 1s linear 29.5s 1 forwards,
+			   ord2 1s linear 35.5s 1 forwards,
+			   ord1 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(5){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord2 1s linear 5.5s 1 forwards,
+			   ord1 1s linear 11.5s 1 forwards,
+			   ord4 1s linear 17.5s 1 forwards,
+			   ord7 1s linear 23.5s 1 forwards,
+			   ord3 1s linear 29.5s 1 forwards,
+			   ord8 1s linear 35.5s 1 forwards,
+			   ord6 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(6){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord5 1s linear 5.5s 1 forwards,
+			   ord2 1s linear 11.5s 1 forwards,
+			   ord1 1s linear 17.5s 1 forwards,
+			   ord4 1s linear 23.5s 1 forwards,
+			   ord7 1s linear 29.5s 1 forwards,
+			   ord3 1s linear 35.5s 1 forwards,
+			   ord8 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(7){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord3 1s linear 5.5s 1 forwards,
+			   ord8 1s linear 11.5s 1 forwards,
+			   ord6 1s linear 17.5s 1 forwards,
+			   ord5 1s linear 23.5s 1 forwards,
+			   ord2 1s linear 29.5s 1 forwards,
+			   ord1 1s linear 35.5s 1 forwards,
+			   ord4 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+.skill-div ul li:nth-of-type(8){
+	animation: li 3s cubic-bezier(1,.05,.56,.9) 15 alternate forwards,
+			   ord6 1s linear 5.5s 1 forwards,
+			   ord5 1s linear 11.5s 1 forwards,
+			   ord2 1s linear 17.5s 1 forwards,
+			   ord1 1s linear 23.5s 1 forwards,
+			   ord4 1s linear 29.5s 1 forwards,
+			   ord7 1s linear 35.5s 1 forwards,
+			   ord3 1s linear 41.5s 1 forwards,
+			   shad 2s linear 44.5s 1 forwards;
+}
+
+
+@keyframes li{
+	0% {opacity: 0; }
+	10% {opacity: 0; }
+	100% {opacity: 1; }
+}
+
+@keyframes ord4{
+	0% {order: 1;}
+	100% {order: 4;}
+}
+
+@keyframes ord1{
+	0% {order: 2;}
+	100% {order: 1;}
+}
+
+@keyframes ord8{
+	0% {order: 3;}
+	100% {order: 8;}
+}
+@keyframes ord7{
+	0% {order: 4;}
+	100% {order: 7;}
+}
+
+@keyframes ord2{
+	0% {order: 5;}
+	100% {order: 2;}
+}
+
+@keyframes ord5{
+	0% {order: 6;}
+	100% {order: 5;}
+}
+@keyframes ord3{
+	0% {order: 7;}
+	100% {order: 3;}
+}
+
+@keyframes ord6{
+	0% {order: 8;}
+	100% {order: 6;}
+}
+@keyframes shad{
+	0% {text-shadow: 0 0 transparent;}
+	100% {text-shadow:
+			0 1px #808d93,
+			-1px 0 #cdd2d5,
+			-1px 2px #808d93,
+			-2px 1px #cdd2d5,
+			-2px 3px #808d93,
+			-3px 2px #cdd2d5,
+			-3px 4px #808d93,
+			-4px 3px #cdd2d5,
+			-4px 5px #808d93,
+			-5px 4px #cdd2d5,
+			-5px 6px #808d93,
+			-6px 5px #cdd2d5,
+			-6px 7px #808d93,
+			-7px 6px #cdd2d5,
+			-7px 8px #808d93,
+			-8px 7px #cdd2d5;}
+}
+
+
+
+@keyframes shad2{
+	0% {box-shadow: 0 0 0 0 transparent;}
+	100% {box-shadow: -19px 19px 20px 0 #4a4a4a;}
+}
+
+
