@@ -10,24 +10,20 @@ li {
 img {
   display: block; }
 
-header {
-  background-color: #fafafa; }
-
 a {
   text-decoration: none;
   transition: all .5s; }
+  a:link {
+    color: #4a4a4a; }
+  a:visited {
+    color: #ff0000; }
+  a:hover {
+    text-shadow: 0 1px 0 #222, 0 -1px 0 #222, 0 2px 0 #222, 0 3px 0 #222, 0 4px 0 #222; }
+  a:active {
+    text-decoration: underline; }
 
-a:link {
-  color: #4a4a4a; }
-
-a:visited {
-  color: red; }
-
-a:hover {
-  text-shadow: 0 1px 0 #222, 0 -1px 0 #222, 0 2px 0 #222, 0 3px 0 #222, 0 4px 0 #222; }
-
-a:active {
-  text-decoration: underline; }
+header, footer, .base-content {
+  background-color: #fafafa; }
 
 .headnav a {
   display: block;
@@ -44,6 +40,9 @@ a:active {
 
 .main-content {
   padding-bottom: 1.875em; }
+.main-imgs {
+  width: 90.625%;
+  margin: 1.25em auto 0.9375em; }
 
 #port {
   padding-top: 1.625rem;
@@ -53,10 +52,6 @@ a:active {
   margin: 2.5625em auto 1.5625em;
   width: 62.5%; }
 
-.main-imgs {
-  width: 90.625%;
-  margin: 1.25em auto 0.9375em; }
-
 .search {
   max-width: 94%; }
 
@@ -65,11 +60,8 @@ a:active {
 
 .base-nav {
   display: none; }
-
 .base-content {
-  padding-top: 2.9375em;
-  background-color: #fafafa; }
-
+  padding-top: 2.9375em; }
 .base-content ul {
   margin: 0.625em auto 2.5em;
   padding-bottom: 0.4375em; }
@@ -88,7 +80,6 @@ a:active {
   background-color: #fff; }
 
 footer {
-  background-color: #fafafa;
   display: flex;
   height: 4.625em;
   justify-content: space-between; }
@@ -101,9 +92,14 @@ footer {
 #btt {
   padding: 2.375em 4.7% 1em 0; }
 
-#port h2 {
-  font-size: .97em;
-  font-weight: 900; }
+.base-content h2, .nav-list li, footer h2, .skills h2, #port {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  font-size: 0.97em;
+  text-transform: uppercase;
+  margin: 5px auto;
+  font-weight: 900;
+  max-width: 90%; }
 
 .top-para,
 .main-para {
@@ -122,7 +118,6 @@ footer {
   font-size: 1.3em;
   text-align: center;
   margin: 1.25em auto 0.6em; }
-
 .main-para {
   max-width: 92%;
   margin: 0.625em auto;
@@ -137,11 +132,9 @@ footer {
   font-weight: 900;
   font-size: 1.15em;
   color: #888; }
-
 .base-content ul li span {
   font-weight: 400;
   margin-right: 0.6em; }
-
 .base-content p {
   padding-top: 0.75em;
   font-size: 0.97em;
@@ -156,24 +149,9 @@ footer {
   opacity: 0;
   font-size: 1.75em; }
 
-.nav-list li,
-#port,
-.base-content h2,
-.skills h2,
-footer h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-  font-size: 0.97em;
-  text-transform: uppercase;
-  margin: 5px auto;
-  padding: 0.6875em 5px;
-  font-weight: 900;
-  max-width: 90%; }
-
 footer h2 {
   padding: 1.6875em 0;
   color: #555;
-  font-weight: 900;
   font-size: 0.8em;
   margin: 0; }
 
@@ -183,6 +161,10 @@ footer h2 {
   text-align: center;
   padding-top: 1.125rem;
   font-size: 1.75em; }
+
+#port h2 {
+  font-size: .97em;
+  font-weight: 900; }
 
 hr {
   width: 92.1875%;

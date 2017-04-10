@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #4a4a4a;
+	color: $tundora;
 }
 
 li{
@@ -14,29 +14,44 @@ img{
 }
 
 header{
-	background-color: #fafafa;
+	@extend %bgcol;
 }
 a{
 	text-decoration: none;
 	transition: all .5s;
-}
-a:link{
-	color: #4a4a4a;
+
+
+	&:link{
+		color: $tundora;
+	}
+	
+
+	&:visited{
+		color: $red;
+	}
+	&:hover{
+		text-shadow:0 1px 0 #222,
+			0 -1px 0 #222,
+                	0 2px 0 #222,
+                	0 3px 0 #222,
+                	0 4px 0 #222;
+	}
+
+	&:active{
+		text-decoration: underline;
+	}
+
+
+
+
 }
 
-a:visited{
-	color: red;
-}
-a:hover{
-	text-shadow:0 1px 0 #222,
-				0 -1px 0 #222,
-                0 2px 0 #222,
-                0 3px 0 #222,
-                0 4px 0 #222;
-}
 
-a:active{
-	text-decoration: underline;
+footer{
+	@extend %bgcol;
+}
+.base-content{
+	@extend %bgcol;
 }
 
 
