@@ -1,15 +1,11 @@
 
-#port h2{
-	font-size: .97em;
-	font-weight: 900;
-}
 
 
 .top-para,
 .main-para{
 	font-family: 'Libre Franklin', sans-serif;
 	line-height: 1.5;
-	color: #666;
+	color: $dovegrey;
 	font-size: 1em;
 	font-weight: 300;
 	text-align: center;
@@ -18,74 +14,79 @@
 }
 
 
-.main-titles{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size: 1.3em;
-	text-align: center;
-	margin: 1.25em auto 0.6em;
-}
-
-.main-para{
-	max-width: 92%;
-	margin: 0.625em auto;
-	font-size: 0.95em;
-	color: #000;
-	padding-bottom: 1.25em;
-}
+.main {
 
 
-.base-content ul li{
-	font-family: 'Source Sans Pro', sans-serif;
-	text-align: center;
-	margin: 0.625em auto 0.9375em;
-	font-weight: 900;
-	font-size: 1.15em;
-	color: #888;
+	&-titles{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 1.3em;
+		text-align: center;
+		margin: 1.25em auto 0.6em;
+	}
+
+	&-para{
+		max-width: 92%;
+		margin: 0.625em auto;
+		font-size: 0.95em;
+		color: $black;
+		padding-bottom: 1.25em;
+	}
+
+
 }
 
-.base-content ul li span{
-	font-weight: 400;
-	margin-right: 0.6em;
+
+.base-content {
+
+
+	& ul li{
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		margin: 0.625em auto 0.9375em;
+		font-weight: 900;
+		font-size: 1.15em;
+		color: $grey;
+	}
+
+	& ul li span{
+		font-weight: 400;
+		margin-right: 0.6em;
+	}
+	& p{
+		padding-top: 0.75em;
+		font-size: 0.97em;
+		line-height: 1.55;
+		padding-bottom: 1.0625em;
+	}
+
+	& h2{
+		@extend %headline;
+	}
 }
-.base-content p{
-	padding-top: 0.75em;
-	font-size: 0.97em;
-	line-height: 1.55;
-	padding-bottom: 1.0625em;
-}
+
 
 
 .skill-div ul li{
 	margin: 0;
 	padding: 0.5em;
 	display: inline-block;
-	color: #4a4a4a;
+	color: $tundora;
 	opacity: 0;
 	font-size: 1.75em;
 }
 
 
-.nav-list li,
-#port,
-.base-content h2,
-.skills h2,
-footer h2{
-	font-family: 'Source Sans Pro', sans-serif;
-	text-align: center;
-	font-size: 0.97em;
-	text-transform: uppercase;
-	margin: 5px auto;
-	padding: 0.6875em 5px;
-	font-weight: 900;
-	max-width: 90%
+.nav-list li{
+	@extend %headline;
 }
 
 
+
 footer h2{
+	@extend %headline;
 	padding: 1.6875em 0;
-	color: #555;
-	font-weight: 900;
+	color: $emperor;
 	font-size: 0.8em;
 	margin: 0;
 }
@@ -99,4 +100,25 @@ footer h2{
 	padding-top: 1.125rem;
 	font-size: 1.75em;
 }
+
+
+
+.skills h2{
+	@extend %headline;
+}
+
+
+
+
+#port{
+	@extend %headline;
+}
+
+
+#port h2{
+	font-size: .97em;
+	font-weight: 900;
+}
+
+
 
