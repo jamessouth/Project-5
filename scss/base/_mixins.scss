@@ -1,0 +1,18 @@
+
+
+
+
+@mixin text($size, $weight: null, $color: null, $fam: null, $lh: null) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+	font-family: $fam;
+	line-height: $lh;
+}
+
+
+
+
+
+
+

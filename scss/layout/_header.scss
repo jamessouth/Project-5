@@ -7,6 +7,12 @@
 
 .nav-list{
 	margin: 1.3125em 0;
+		
+	@media #{$tablet} {
+		display: flex;
+		margin-top: 0.9375em;
+	}
+
 }
 
 
@@ -18,7 +24,7 @@
 
 
 .nav-list li{
-	background-color: #fff;
+	background-color: $white;
 }
 
 

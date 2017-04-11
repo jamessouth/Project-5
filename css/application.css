@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  text-align: center; }
 
 li {
   list-style: none; }
@@ -31,6 +32,10 @@ header, footer, .base-content {
 
 .nav-list {
   margin: 1.3125em 0; }
+  @media screen and (min-width: 768px) {
+    .nav-list {
+      display: flex;
+      margin-top: 0.9375em; } }
 
 .headnav li {
   padding: 0; }
@@ -40,9 +45,16 @@ header, footer, .base-content {
 
 .main-content {
   padding-bottom: 1.875em; }
+  @media screen and (min-width: 768px) {
+    .main-content {
+      display: flex; } }
 .main-imgs {
   width: 90.625%;
   margin: 1.25em auto 0.9375em; }
+
+@media screen and (min-width: 768px) {
+  .top-div {
+    display: flex; } }
 
 #port {
   padding-top: 1.625rem;
@@ -93,77 +105,80 @@ footer {
   padding: 2.375em 4.7% 1em 0; }
 
 .base-content h2, .nav-list li, footer h2, .skills h2, #port {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
   font-size: 0.97em;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   margin: 5px auto;
-  font-weight: 900;
   max-width: 90%; }
 
 .top-para,
 .main-para {
-  font-family: 'Libre Franklin', sans-serif;
-  line-height: 1.5;
-  color: #666;
   font-size: 1em;
   font-weight: 300;
-  text-align: center;
+  color: #666;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.5;
   padding: 0 0.5em 2.5em;
   margin: 1.25em auto 1.25em; }
 
 .main-titles {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
   font-size: 1.3em;
-  text-align: center;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 1.25em auto 0.6em; }
 .main-para {
-  max-width: 92%;
-  margin: 0.625em auto;
   font-size: 0.95em;
   color: #000;
+  max-width: 92%;
+  margin: 0.625em auto;
   padding-bottom: 1.25em; }
 
 .base-content ul li {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-  margin: 0.625em auto 0.9375em;
-  font-weight: 900;
   font-size: 1.15em;
-  color: #888; }
+  font-weight: 900;
+  color: #888;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0.625em auto 0.9375em; }
 .base-content ul li span {
   font-weight: 400;
   margin-right: 0.6em; }
 .base-content p {
-  padding-top: 0.75em;
   font-size: 0.97em;
   line-height: 1.55;
+  padding-top: 0.75em;
   padding-bottom: 1.0625em; }
 
 .skill-div ul li {
+  font-size: 1.75em;
+  color: #4a4a4a;
   margin: 0;
   padding: 0.5em;
   display: inline-block;
-  color: #4a4a4a;
-  opacity: 0;
-  font-size: 1.75em; }
+  opacity: 0; }
+
+@media screen and (min-width: 768px) {
+  .nav-list li {
+    background-color: initial;
+    margin: 5px 0.9375em; } }
 
 footer h2 {
-  padding: 1.6875em 0;
-  color: #555;
   font-size: 0.8em;
+  color: #555;
+  padding: 1.6875em 0;
   margin: 0; }
 
 .top-name {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.75em;
   font-weight: 900;
-  text-align: center;
-  padding-top: 1.125rem;
-  font-size: 1.75em; }
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 1.125rem; }
+  @media screen and (min-width: 768px) {
+    .top-name {
+      padding-top: 1.65em; } }
 
 #port h2 {
-  font-size: .97em;
+  font-size: 0.97em;
   font-weight: 900; }
 
 hr {
@@ -284,22 +299,6 @@ hr {
   100% {
     box-shadow: -19px 19px 20px 0 #4a4a4a; } }
 @media screen and (min-width: 768px) {
-  .headnav,
-  .footnav,
-  .top-div,
-  .main-content {
-    display: flex; }
-
-  .top-name {
-    padding-top: 1.65em; }
-
-  .nav-list {
-    margin-top: 0.9375em; }
-
-  .nav-list li {
-    background-color: initial;
-    margin: 5px 0.9375em; }
-
   .top-para {
     font-size: 1.2em; }
 
