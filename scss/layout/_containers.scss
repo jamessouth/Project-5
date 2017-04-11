@@ -2,6 +2,10 @@
 
 	&-content{
 		padding-bottom: 1.875em;
+
+		@media #{$tablet} {
+			display: flex;
+		}
 	}
 
 
@@ -13,7 +17,11 @@
 
 }
 
-
+.top-div{
+	@media #{$tablet} {
+		display: flex;
+	}
+}
 
 
 #port{
@@ -59,12 +67,6 @@
 }
 
 
-
-
-
-
-
-
 .skill-div{
 	display: flex;
 }
@@ -80,7 +82,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	animation: shad2 2s linear 44.5s 1 forwards;
-	background-color: #fff;
+	background-color: $white;
 }
 
 

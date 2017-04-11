@@ -3,12 +3,7 @@
 
 .top-para,
 .main-para{
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 1.5;
-	color: $dovegrey;
-	font-size: 1em;
-	font-weight: 300;
-	text-align: center;
+	@include text(1em, 300, $dovegrey, $frank, 1.5);
 	padding: 0 0.5em 2.5em;
 	margin: 1.25em auto 1.25em;
 }
@@ -18,18 +13,14 @@
 
 
 	&-titles{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 400;
-		font-size: 1.3em;
-		text-align: center;
+		@include text(1.3em, 400, $fam: $source);
 		margin: 1.25em auto 0.6em;
 	}
 
 	&-para{
+		@include text(0.95em, $color: $black);
 		max-width: 92%;
 		margin: 0.625em auto;
-		font-size: 0.95em;
-		color: $black;
 		padding-bottom: 1.25em;
 	}
 
@@ -41,12 +32,8 @@
 
 
 	& ul li{
-		font-family: 'Source Sans Pro', sans-serif;
-		text-align: center;
+		@include text(1.15em, 900, $grey, $source);
 		margin: 0.625em auto 0.9375em;
-		font-weight: 900;
-		font-size: 1.15em;
-		color: $grey;
 	}
 
 	& ul li span{
@@ -54,9 +41,8 @@
 		margin-right: 0.6em;
 	}
 	& p{
+		@include text(0.97em, $lh: 1.55);
 		padding-top: 0.75em;
-		font-size: 0.97em;
-		line-height: 1.55;
 		padding-bottom: 1.0625em;
 	}
 
@@ -68,37 +54,41 @@
 
 
 .skill-div ul li{
+	@include text(1.75em, $color: $tundora);
 	margin: 0;
 	padding: 0.5em;
 	display: inline-block;
-	color: $tundora;
 	opacity: 0;
-	font-size: 1.75em;
 }
 
 
 .nav-list li{
 	@extend %headline;
+
+	@media #{$tablet} {
+		background-color: initial;
+		margin: 5px 0.9375em;
+	}
 }
 
 
 
 footer h2{
 	@extend %headline;
+	@include text(0.8em, $color: $emperor);
 	padding: 1.6875em 0;
-	color: $emperor;
-	font-size: 0.8em;
 	margin: 0;
 }
 
 
 
 .top-name{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 900;
-	text-align: center;
+	@include text(1.75em, 900, $fam: $source);
 	padding-top: 1.125rem;
-	font-size: 1.75em;
+
+	@media #{$tablet} {
+		padding-top: 1.65em;
+	}
 }
 
 
@@ -116,8 +106,7 @@ footer h2{
 
 
 #port h2{
-	font-size: .97em;
-	font-weight: 900;
+	@include text(0.97em, 900);
 }
 
 
