@@ -7,6 +7,15 @@ hr{
 	color: $mercury;
 	background: $mercury;
 	border: none;
+
+	@media #{$desktop} {
+		width: 87.3046875%;
+	}
+
+
+
+
+
 }
 #f-line{
 	margin-bottom: 2em;
