@@ -6,6 +6,12 @@
 	text-align: center;
 }
 
+body{
+	background-color: $alabaster;
+}
+
+
+
 li{
 	list-style: none;
 }
@@ -14,9 +20,6 @@ img{
 	display: block;
 }
 
-header{
-	@extend %bgcol;
-}
 a{
 	text-decoration: none;
 	transition: all .5s;
@@ -48,12 +51,6 @@ a{
 }
 
 
-footer{
-	@extend %bgcol;
-}
-.base-content{
-	@extend %bgcol;
-}
 
 
 

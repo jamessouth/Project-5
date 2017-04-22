@@ -1,9 +1,20 @@
-//background color
+//margins
 
-%bgcol{
-	background-color: $alabaster;
+%one{
+
+	margin: 1.25em auto 0.6em;
 }
 
+
+
+//headlines
+
+%headline{
+	@include text(0.97em, 900, $fam: $source);
+	text-transform: uppercase;
+	margin: 5px auto;
+	max-width: 90%;
+}
 
 
 

@@ -5,6 +5,9 @@
   color: #4a4a4a;
   text-align: center; }
 
+body {
+  background-color: #fafafa; }
+
 li {
   list-style: none; }
 
@@ -23,8 +26,17 @@ a {
   a:active {
     text-decoration: underline; }
 
-header, footer, .base-content {
-  background-color: #fafafa; }
+.main-imgs, .top-para,
+.main-para, .main-titles {
+  margin: 1.25em auto 0.6em; }
+
+.base-content h2, .nav-list li, footer h2, .skills h2, #port {
+  font-size: 0.97em;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  margin: 5px auto;
+  max-width: 90%; }
 
 .headnav a {
   display: block;
@@ -41,7 +53,8 @@ header, footer, .base-content {
   background-color: #fff; }
 
 .main-content {
-  padding-bottom: 1.875em; }
+  padding-bottom: 1.875em;
+  background-color: #fff; }
   @media screen and (min-width: 768px) {
     .main-content {
       display: flex;
@@ -52,8 +65,9 @@ header, footer, .base-content {
   @media screen and (min-width: 1024px) {
     .main-content {
       justify-content: center;
-      width: 94.140625%;
-      background-color: #fff; } }
+      width: 94.140625%; } }
+  .main-content img:nth-of-type(1) {
+    margin-top: 0; }
   @media screen and (min-width: 768px) {
     .main-content section {
       width: 45.2%;
@@ -82,8 +96,7 @@ header, footer, .base-content {
       margin-left: 1.25em;
       margin-right: 1.25em; } }
 .main-imgs {
-  width: 90.625%;
-  margin: 1.25em auto 0.9375em; }
+  width: 90.625%; }
   @media screen and (min-width: 768px) {
     .main-imgs {
       width: 100%;
@@ -187,7 +200,6 @@ header, footer, .base-content {
   body {
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
     align-items: center; } }
 
 @media screen and (min-width: 1024px) {
@@ -235,14 +247,6 @@ footer {
     #btt {
       display: none; } }
 
-.base-content h2, .nav-list li, footer h2, .skills h2, #port {
-  font-size: 0.97em;
-  font-weight: 900;
-  font-family: "Source Sans Pro", sans-serif;
-  text-transform: uppercase;
-  margin: 5px auto;
-  max-width: 90%; }
-
 .top-para,
 .main-para {
   font-size: 1em;
@@ -250,14 +254,12 @@ footer {
   color: #666;
   font-family: "Libre Franklin", sans-serif;
   line-height: 1.5;
-  padding: 0 0.5em 2.5em;
-  margin: 1.25em auto 1.25em; }
+  padding: 0 0.5em 2.5em; }
 
 .main-titles {
   font-size: 1.3em;
   font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 1.25em auto 0.6em; }
+  font-family: "Source Sans Pro", sans-serif; }
 .main-para {
   font-size: 0.95em;
   color: #000;
@@ -376,15 +378,17 @@ footer h2 {
       margin-left: 5.859375%; } }
 
 #port {
-  padding-top: 1.625rem;
-  padding-bottom: 1.8125em; }
+  padding-top: 2.625rem;
+  padding-bottom: 2.8125em;
+  background-color: #fff;
+  margin: 0;
+  max-width: 100%; }
   @media screen and (min-width: 768px) {
     #port {
       padding-top: 2.67em;
-      margin-bottom: 1.35em; } }
+      padding-bottom: 3.25em; } }
   @media screen and (min-width: 1024px) {
     #port {
-      background-color: #fff;
       width: 94.140625%;
       max-width: 100%;
       margin: 0;
