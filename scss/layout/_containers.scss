@@ -2,7 +2,7 @@
 
 	&-content{
 		padding-bottom: 1.875em;
-
+		background-color: $white;
 		@media #{$tablet} {
 			display: flex;
 			flex-direction: row;
@@ -14,10 +14,11 @@
 		@media #{$desktop} {
 			justify-content: center;
 			width: 94.140625%;
-			background-color: $white;
 		}
 
-
+		& img:nth-of-type(1){
+			margin-top: 0;
+		}
 		& section {
 			@media #{$tablet} {
 				width: 45.2%;
@@ -74,8 +75,7 @@
 
 	&-imgs{
 		width: 90.625%;
-		margin: 1.25em auto 0.9375em;
-
+		@extend %one;
 
 		@media #{$tablet} {
 			width: 100%;
@@ -236,7 +236,6 @@ body{
 	@media #{$desktop} {
 		display: flex;
 		flex-direction: column;
-		background-color: $alabaster;
 		align-items: center;
 	}
 }
